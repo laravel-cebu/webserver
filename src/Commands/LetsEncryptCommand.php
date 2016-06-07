@@ -20,6 +20,13 @@ class LetsEncryptCommand extends AbstractCommand
     protected $action;
 
     /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'letsencrypt';
+
+    /**
      * Create a new command instance.
      *
      * @param        $hostname_id
@@ -28,7 +35,7 @@ class LetsEncryptCommand extends AbstractCommand
     {
         parent::__construct();
 
-        $this->hostname = app('Hyn\Webserver\Contracts\HostnameRepositoryContract')->findById($hostname_id);
+        $this->hostname = app('Hyn\MultiTenant\Contracts\HostnameRepositoryContract')->findById($hostname_id);
     }
 
     /**
