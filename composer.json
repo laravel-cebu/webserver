@@ -22,7 +22,7 @@
     "require-dev": {
         "mockery/mockery": "*",
         "fzaninotto/faker": "*",
-        "laravel/laravel": "5.1.*"
+        "laravel/laravel": "5.2.*"
     },
     "autoload": {
         "psr-4": {

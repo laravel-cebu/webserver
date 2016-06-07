@@ -23,6 +23,13 @@ class WebserverCommand extends AbstractRootCommand
     protected $action;
 
     /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'webserver';
+
+    /**
      * Create a new command instance.
      *
      * @param int    $website_id

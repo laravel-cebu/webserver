@@ -52,7 +52,7 @@ class WebsiteUserTest extends TestCase
 
         $app['config']->set('database.default', 'hyn');
 
-        $this->artisan('multi-tenant:setup', [
+        $this->call('multi-tenant:setup', [
             '--tenant'    => 'example',
             '--hostname'  => 'system.testing',    // configured in travis as primary hostname
             '--email'     => 'info@example.org',
